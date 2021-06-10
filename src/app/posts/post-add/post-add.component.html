@@ -1,0 +1,15 @@
+<mat-card>
+  <form (submit)="submitPost(postForm)" #postForm="ngForm">
+    <mat-form-field>
+      <input matInput type="text" name="title" #title="ngModel" [ngModel]="post?.title" required minlength="5"
+        placeholder="Tutaj wpisz tytuł">
+      <mat-error class="error" *ngIf="title.invalid && showErrors">Tytuł musi mieć co najmniej 5 znaków.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput rows="10" name="content" #content="ngModel" [ngModel]="post?.content" required minlength="10"
+        placeholder="Tutaj wpisz treść"></textarea>
+      <mat-error class="error" *ngIf="content.invalid && showErrors">Wpis musi mieć co najmniej 10 znaków.</mat-error>
+    </mat-form-field>
+    <button mat-raised-button type="submit">Zapisz</button>
+  </form>
+</mat-card>

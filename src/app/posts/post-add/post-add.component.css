@@ -1,0 +1,8 @@
+button {
+  background-color: rgb(70, 99, 101);
+  color: azure;
+}
+mat-form-field,
+textarea {
+  width: 100%;
+}
