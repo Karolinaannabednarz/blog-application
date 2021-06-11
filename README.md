@@ -40,9 +40,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Screenshots
 
-(./img/blog-screenshot1.png)
-
-(./img/blog-screenshot2.png)
+![Example screenshot](src/assets/img/blog-screenshot1.png)
+![Example screenshot](src/assets/img/blog-screenshot2.png)
 
 ## Further help
 
