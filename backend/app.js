@@ -6,10 +6,10 @@ const postsRoutes = require("./routes/posts");
 mongoose
   .connect("mongodb+srv://karo:T5afBLpgM8xw0uT1@cluster0.jtnkd.mongodb.net/node-angular?retryWrites=true&w=majority")
   .then(() => {
-    console.log("Connected to database!");
+    console.log("Połączono z bazą danych");
   })
   .catch(() => {
-    console.log("Connection failed!");
+    console.log("Błąd połaczenia z bazą danych");
   });
 
 app.use(express.json());
